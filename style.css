@@ -270,6 +270,12 @@ header {
   
 }
 
+/* button { 
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+} */
+
 .portfolio__buttons button{
   display: flex;
   flex-direction: row;
@@ -290,6 +296,11 @@ header {
   color: #dedede;
   border: solid #dedede 1px;
   transition: 0.3s;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
 
 .portfolio__pics ul {
@@ -449,6 +460,7 @@ input.submit-but {
   width: 100px;
   font-size: 16px;
   border-radius: 5px;
+  padding-left: 14px;
 }
 
 input.submit-but:hover {
@@ -557,5 +569,8 @@ footer {
 }
 .contact-links li{
   padding-left: 8px;
-  
+}
+
+.contact-links li:hover {
+  cursor: pointer;
 }
