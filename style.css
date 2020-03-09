@@ -149,6 +149,11 @@ header {
   right: 42px;
 }
 
+.left_arrow:hover,
+.right_arrow:hover {
+  cursor: pointer;
+}
+
 .services {
   width: 100%;
   height: 493px;
